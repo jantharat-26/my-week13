@@ -4,7 +4,7 @@
 
 @section('content')
     <h2 class="text text-center py-2">เขียนบทความใหม่</h2>
-    <form method="POST" action="/insert">
+    <form method="POST" action="{{ route('author.insert') }}">
         @csrf
         <div class="form-grop">
             <label for="title">ชื่อบทความ</label>
@@ -27,6 +27,6 @@
         @enderror
 
         <input type="submit" value="บันทึก" class="btn btn-primary my-3">
-        <a href="/blogs" class="btn btn-secondary">บทความทั้งหมด</a>
+        <a href="{{ route('author.blogs') }}" class="btn btn-secondary">บทความทั้งหมด</a>
     </form>
 @endsection

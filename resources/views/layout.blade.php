@@ -22,13 +22,13 @@
                     <a class="nav-link active" aria-current="page" href="/">หน้าเเรก</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('abouts') }}">เกี่ยวกับฉัน</a>
+                    <a class="nav-link" href="{{ route('author.abouts') }}">เกี่ยวกับฉัน</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('blogs') }}">บทความ</a>
+                    <a class="nav-link" href="{{ route('author.blogs') }}">บทความ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('create') }}">เขียนบทความ</a>
+                    <a class="nav-link" href="{{ route('author.create') }}">เขียนบทความ</a>
                 </li>
             </ul>
         </div>

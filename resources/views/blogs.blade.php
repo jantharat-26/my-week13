@@ -24,13 +24,13 @@
                         {{-- <td>{{ Str::limit($item->content, 20) }}</td> --}}
                         <td>
                             @if ($item->status)
-                                <a href="{{ route('change', $item->id) }}"class="btn btn-success">เผยเเพร่</a>
+                                <a href="{{ route('author.change', $item->id) }}"class="btn btn-success">เผยเเพร่</a>
                             @else
-                                <a href="{{ route('change', $item->id) }}"class="btn btn-danger">ไม่เผยเเพร่</a>
+                                <a href="{{ route('author.change', $item->id) }}"class="btn btn-danger">ไม่เผยเเพร่</a>
                             @endif
                         </td>
-                        <td><a href="{{ route('edit', $item->id) }}"class="btn btn-warning">เเก้ไข</a></td>
-                        <td><a href="{{ route('delete', $item->id) }}" class="btn btn-danger"
+                        <td><a href="{{ route('author.edit', $item->id) }}"class="btn btn-warning">เเก้ไข</a></td>
+                        <td><a href="{{ route('author.delete', $item->id) }}" class="btn btn-danger"
                                 onclick="return confirm('คุณต้องการลบบทความ{{ $item->title }}หรือไม่')">ลบ</a></td>
                     </tr>
                 @endforeach
